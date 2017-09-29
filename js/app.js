@@ -15,6 +15,11 @@ angular.module('TodoApp').config(function
   
     })
     
+    .when('/todo/edit/:id', {
+        templateUrl: 'template/register.html',
+        controller: 'editTodoController'
+    })
+    
     .when('/accounts/register',{
         templateUrl: 'templates/register.html',
         controller: 'RegisterController'
